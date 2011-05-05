@@ -1,0 +1,27 @@
+<table>
+<% for message in @messages %>
+<tr>
+<td colspan="2">
+<br/>
+<hr/>
+</td>
+</tr>
+<tr>
+<td>
+  
+
+
+ <%= h image_tag(message['user']["profile_image_url"],:size => "70x60", :alt => message['user']["name"]) %>  
+     
+</td>
+<td style="margin:10px;">
+From:<%= h message['user']["name"]  %><br/>
+Posted: <%= h message['created_at']  %>  <br/>
+
+Message: <%= h message['text']  %><br/>
+</td>
+
+</tr>
+<% end %>
+</table>
+

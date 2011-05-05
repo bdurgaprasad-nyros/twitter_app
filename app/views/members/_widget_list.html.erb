@@ -1,0 +1,33 @@
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'list',
+  rpp: 5,
+  interval: 6000,
+  title: '@palafo',
+  subject: 'Linkers',
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#ad0000',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#ad0000'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    behavior: 'all'
+  }
+}).render().setList('kakinada_kkd', 'prasad_nyros').start();
+</script>

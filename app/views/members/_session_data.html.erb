@@ -1,0 +1,274 @@
+
+
+
+
+<div id="sessiondata" style="clear:both;color:#00CCFF>
+
+<p>
+  <b> Statues Count:</b>
+  <%=h session[:user_info]["statuses_count"]%>
+</p>
+
+<p>
+  <b> Name :</b>
+  <%=h session[:user_info]["name"]%>
+</p>
+<p>
+  <b> Followers Count:</b>
+  <%=h session[:user_info]["followers_count"]%>
+</p>
+<p>
+  <b> Friends Count:</b>
+  <%=h session[:user_info]["friends_count"]%>
+</p>
+<p>
+  <b> Statues Count:</b>
+  <%=h session[:user_info]["statuses_count"]%>
+</p>
+<p>
+  <b> Favourites Count:</b>
+  <%=h session[:user_info]["favourites_count"]%>
+</p>
+<p>
+  <b>Location:</b>
+  <%=h session[:user_info]["location"]%>
+</p>
+
+<p>
+  <b>Profile_sidebar_fill_color:</b>
+  <%=h session[:user_info]["profile_sidebar_fill_color"]%>
+</p>
+
+
+
+<h3>Status</h3>
+<hr/>
+
+<p>
+  <b>Place:</b>
+  <%=h session[:user_info]['status']["place"]%>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%=h session[:user_info]['status']["truncated"]%>
+</p>
+
+<p>
+  <b>Truncated:</b>
+  <%=h session[:user_info]['status']["text"]%>
+</p>
+
+<p>
+  <b>Idstr:</b>
+  <%=h session[:user_info]['status']["id_str"]%>
+</p>
+
+
+<p>
+  <b>In_reply_to_status_id_str:</b>
+  <%=h session[:user_info]['status']["in_reply_to_status_id_str"]%>
+</p>
+
+<p>
+  <b>In_reply_to_status_user_str:</b>
+  <%=h session[:user_info]['status']["in_reply_to_user_id_str"]%>
+</p>
+
+<p>
+  <b>Status Id:</b>
+  <%=h session[:user_info]['status']["id"]%>
+</p>
+
+<p>
+  <b>Geo:</b>
+  <%=h session[:user_info]['status']["geo"]%>
+</p>
+
+<p>
+  <b>Contributors:</b>
+  <%=h session[:user_info]['status']["contributors"]%>
+</p>
+
+<p>
+  <b>Retweets Count:</b>
+  <%=h session[:user_info]['status']["retweet_count"]%>
+</p>
+
+<p>
+  <b>Retweeted:</b>
+  <%=h session[:user_info]['status']["retweeted"]%>
+</p>
+
+<p>
+  <b>Coordinates:</b>
+  <%=h session[:user_info]['status']["coordinates"]%>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%=h session[:user_info]['status']["source"]%>
+</p>
+
+<p>
+  <b>Created_at:</b>
+  <%=h session[:user_info]['status']["created_at"]%>
+</p>
+
+<hr/>
+
+
+<p>
+  <b>Show_all_inline_media:</b>
+  <%=h session[:user_info]["show_all_inline_media"]%>
+</p>
+
+<p>
+  <b>Profile_link_color:</b>
+  <%=h session[:user_info]["profile_link_color"]%>
+</p>
+
+<p>
+  <b>Profile_sidebar_border_color:</b>
+  <%=h session[:user_info]["profile_sidebar_border_color"]%>
+</p>
+
+<p>
+  <b>Id_str:</b>
+  <%=h session[:user_info]["id_str"]%>
+</p>
+
+<p>
+  <b>Profile_background_tile:</b>
+  <%=h session[:user_info]["profile_background_tile"]%>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h session[:user_info]["url"]%>
+</p>
+
+
+<p>
+  <b>Id:</b>
+  <%=h session[:user_info]["id"]%>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h session[:user_info]["description"]%>
+</p>
+
+<p>
+  <b>Follow_request_sent:</b>
+  <%=h session[:user_info]["follow_request_sent"]%>
+</p>
+
+
+<p>
+  <b>Contributors_enabled:</b>
+  <%=h session[:user_info]["contributors_enabled"]%>
+</p>
+
+
+<p>
+  <b>Is_translator:</b>
+  <%=h session[:user_info]["is_translator"]%>
+</p>
+
+<p>
+  <b>Default Profile:</b>
+  <%=h session[:user_info]["default_profile"]%>
+</p>
+
+<p>
+  <b>Profile_use_background_image:</b>
+  <%=h session[:user_info]["profile_use_background_image"]%>
+</p>
+
+<p>
+  <b>Lists Count:</b>
+  <%=h session[:user_info]["profile_use_background_image"]%>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%=h session[:user_info]["lang"]%>
+</p>
+
+<p>
+  <b>Default_profile_image:</b>
+  <%=h session[:user_info]["default_profile_image"]%>
+</p>
+
+<p>
+  <b>Protected:</b>
+  <%=h session[:user_info]["protected"]%>
+</p>
+
+
+<p>
+  <b>Profile Text Color:</b>
+  <%=h session[:user_info]["profile_text_color"]%>
+</p>
+
+
+<p>
+  <b>Utc_offset:</b>
+  <%=h session[:user_info]["utc_offset"]%>
+</p>
+
+<p>
+  <b>Time Zone:</b>
+  <%=h session[:user_info]["time_zone"]%>
+</p>
+
+<p>
+  <b>Geo_enabled:</b>
+  <%=h session[:user_info]["geo_enabled"]%>
+</p>
+
+<p>
+  <b>Verified:</b>
+  <%=h session[:user_info]["verified"]%>
+</p>
+
+<p>
+  <b>Profile Background Color:</b>
+  <%=h session[:user_info]["profile_background_color"]%>
+</p>
+
+<p>
+  <b>Notifications :</b>
+  <%=h session[:user_info]["notifications"]%>
+</p>
+
+<p>
+  <b>Profile_background_image_url:</b>
+  <%=h session[:user_info]["profile_background_image_url"]%>
+</p>
+
+<p>
+  <b>Profile_image_url:</b>
+  <%=h session[:user_info]["profile_image_url"]%>
+</p>
+
+<p>
+  <b>Default_profile_image:</b>
+  <%=h session[:user_info]["default_profile_image"]%>
+</p>
+
+<p>
+  <b>Your Twitter Created At:</b>
+  <%=h session[:user_info]["created_at"]%>
+</p>
+
+<p>
+  <b>Following:</b>
+  <%=h session[:user_info]["following"]%>
+</p>
+
+
+
+
+</div>

@@ -1,0 +1,32 @@
+
+<head> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+     <%= stylesheet_link_tag  'index.tweet','jquery.tweet' %>
+     <%= javascript_include_tag( "jquery.tweet" ) %> 
+</head>
+<body>
+  <script type="text/javascript">
+    $(function(){ $(".example").each(function(i, e){ eval($(e).text()); }); });
+  </script>
+
+
+  
+  <div class="example" style="display:none;">
+    $(function(){
+      $("#fromtwo").tweet({
+        avatar_size: 32,
+        count: 10,
+        username: <%= @screens.inspect %> ,
+        loading_text: "searching twitter...",
+        refresh_interval: 100
+      });
+    });
+  </div>
+  <div id='fromtwo' class="query"></div>
+
+
+ 
+<!--['tutorialzine','TechCrunch','smashingmag','mashable',"zonup", "Maheshbhupathi", "chandukantlam", "diigo", "noaheverett", "TwitPic", "NBCNews", "foursquare", "Batchmates", "TED_TALKS", "twitter", "sruthiscraps", "twi", "twittermobile", "toptweets", "TechCrunch", "whitehouse", "htTweets", "GoogleMobile", "verified", "TheSeantourage", "vikramchandra", "SEOExcell", "Aradhanarao", "BillGates", "Isumanth", "arrahman", "f9tech", "BarackObama", "ActorMadhavan", "PrannoyRoyNDTV", "ssrajamouli", "RGVzoomin", "iamnagarjuna", "shriyasmiling", "RanaDaggubati", "urstrulyMahesh", "michaeljackson", "samanthaprabu", "tarak9999", "Actor_Siddharth", "geneliad", "bipsluvurself", "kjohar25", "anandmahindra", "sachin_rt", "SrBachchan", "opera", "rocklive", "PanoramicSoft"]-->
+ 
+</body>
+

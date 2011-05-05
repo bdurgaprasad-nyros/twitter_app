@@ -1,0 +1,15 @@
+<hr/>
+<% style = "height:100px;padding-left:70px;background: url(#{ h direct_message['profile_image_url']}) no-repeat;" %>
+<div style="<%= style %>">
+  
+
+<p>
+From: <%=  h direct_message['profile_image_url'] %> <%#= h direct_message['from_user']  %>
+     
+</p>
+<p>
+Posted: <%= h direct_message['created_at']  %>
+</p>
+<p>Message: <%= h direct_message['text']  %>
+</p>
+</div>

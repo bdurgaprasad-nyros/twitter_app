@@ -1,0 +1,336 @@
+<div id="userdetails">
+<p>
+<%= image_tag(@member.profile_image_url) %>
+</p>
+<p>
+  <b>Twitter ID:</b>
+  <%=h @member.twitter_id %>
+</p>
+
+<p>
+  <b>Screen name:</b>
+  <%=h @member.screen_name %>
+</p>
+
+<p>
+  <b> Statues Count:</b>
+  <%=h session[:user_info].inspect%>
+</p>
+
+<p>
+  <b> Name :</b>
+  <%=h session[:user_info]["name"]%>
+</p>
+<p>
+  <b> Followers Count:</b>
+  <%=h session[:user_info]["followers_count"]%>
+</p>
+<p>
+  <b> Friends Count:</b>
+  <%=h session[:user_info]["friends_count"]%>
+</p>
+<p>
+  <b> Statues Count:</b>
+  <%=h session[:user_info]["statuses_count"]%>
+</p>
+<p>
+  <b> Favourites Count:</b>
+  <%=h session[:user_info]["favourites_count"]%>
+</p>
+<p>
+  <b>Location:</b>
+  <%=h session[:user_info]["location"]%>
+</p>
+
+<p>
+  <b>Profile_sidebar_fill_color:</b>
+  <%=h session[:user_info]["profile_sidebar_fill_color"]%>
+</p>
+
+
+
+<h3>Status</h3>
+<hr/>
+
+<p>
+  <b>Place:</b>
+  <%= session[:user_info]['status']["place"]%>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%= session[:user_info]['status']["truncated"]%>
+</p>
+
+<p>
+  <b>Truncated:</b>
+  <%= session[:user_info]['status']["text"]%>
+</p>
+
+<p>
+  <b>Idstr:</b>
+  <%= session[:user_info]['status']["id_str"]%>
+</p>
+
+
+<p>
+  <b>In_reply_to_status_id_str:</b>
+  <%= session[:user_info]['status']["in_reply_to_status_id_str"]%>
+</p>
+
+<p>
+  <b>In_reply_to_status_user_str:</b>
+  <%= session[:user_info]['status']["in_reply_to_user_id_str"]%>
+</p>
+
+<p>
+  <b>Status Id:</b>
+  <%= session[:user_info]['status']["id"]%>
+</p>
+
+<p>
+  <b>Geo:</b>
+  <%= session[:user_info]['status']["geo"]%>
+</p>
+
+<p>
+  <b>Contributors:</b>
+  <%= session[:user_info]['status']["contributors"]%>
+</p>
+
+<p>
+  <b>Retweets Count:</b>
+  <%= session[:user_info]['status']["retweet_count"]%>
+</p>
+
+<p>
+  <b>Retweeted:</b>
+  <%= session[:user_info]['status']["retweeted"]%>
+</p>
+
+<p>
+  <b>Coordinates:</b>
+  <%= session[:user_info]['status']["coordinates"]%>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%= session[:user_info]['status']["source"]%>
+</p>
+
+<p>
+  <b>Created_at:</b>
+  <%= session[:user_info]['status']["created_at"]%>
+</p>
+
+<hr/>
+
+
+<p>
+  <b>Show_all_inline_media:</b>
+  <%= session[:user_info]["show_all_inline_media"]%>
+</p>
+
+<p>
+  <b>Profile_link_color:</b>
+  <%= session[:user_info]["profile_link_color"]%>
+</p>
+
+<p>
+  <b>Profile_sidebar_border_color:</b>
+  <%= session[:user_info]["profile_sidebar_border_color"]%>
+</p>
+
+<p>
+  <b>Id_str:</b>
+  <%= session[:user_info]["id_str"]%>
+</p>
+
+<p>
+  <b>Profile_background_tile:</b>
+  <%= session[:user_info]["profile_background_tile"]%>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= session[:user_info]["url"]%>
+</p>
+
+
+<p>
+  <b>Id:</b>
+  <%= session[:user_info]["id"]%>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= session[:user_info]["description"]%>
+</p>
+
+<p>
+  <b>Follow_request_sent:</b>
+  <%= session[:user_info]["follow_request_sent"]%>
+</p>
+
+
+<p>
+  <b>Contributors_enabled:</b>
+  <%= session[:user_info]["contributors_enabled"]%>
+</p>
+
+
+<p>
+  <b>Is_translator:</b>
+  <%= session[:user_info]["is_translator"]%>
+</p>
+
+<p>
+  <b>Default Profile:</b>
+  <%= session[:user_info]["default_profile"]%>
+</p>
+
+<p>
+  <b>Profile_use_background_image:</b>
+  <%= session[:user_info]["profile_use_background_image"]%>
+</p>
+
+<p>
+  <b>Lists Count:</b>
+  <%= session[:user_info]["profile_use_background_image"]%>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= session[:user_info]["lang"]%>
+</p>
+
+<p>
+  <b>Default_profile_image:</b>
+  <%= session[:user_info]["default_profile_image"]%>
+</p>
+
+<p>
+  <b>Protected:</b>
+  <%= session[:user_info]["protected"]%>
+</p>
+
+
+<p>
+  <b>Profile Text Color:</b>
+  <%= session[:user_info]["profile_text_color"]%>
+</p>
+
+
+<p>
+  <b>Utc_offset:</b>
+  <%= session[:user_info]["utc_offset"]%>
+</p>
+
+<p>
+  <b>Time Zone:</b>
+  <%= session[:user_info]["time_zone"]%>
+</p>
+
+<p>
+  <b>Geo_enabled:</b>
+  <%= session[:user_info]["geo_enabled"]%>
+</p>
+
+<p>
+  <b>Verified:</b>
+  <%= session[:user_info]["verified"]%>
+</p>
+
+<p>
+  <b>Profile Background Color:</b>
+  <%= session[:user_info]["profile_background_color"]%>
+</p>
+
+<p>
+  <b>Notifications :</b>
+  <%= session[:user_info]["notifications"]%>
+</p>
+
+<p>
+  <b>Profile_background_image_url:</b>
+  <%= session[:user_info]["profile_background_image_url"]%>
+</p>
+
+<p>
+  <b>Profile_image_url:</b>
+  <%= session[:user_info]["profile_image_url"]%>
+</p>
+
+<p>
+  <b>Default_profile_image:</b>
+  <%= session[:user_info]["default_profile_image"]%>
+</p>
+
+<p>
+  <b>Your Twitter Created At:</b>
+  <%= session[:user_info]["created_at"]%>
+</p>
+
+<p>
+  <b>Following:</b>
+  <%= session[:user_info]["following"]%>
+</p>
+
+
+
+
+
+</div>
+
+<%# form_tag update_status_member_path do -%>
+<p>
+ <!-- <b>What are you doing?</b><br />-->
+  <%#= text_area_tag 'status_message' %>
+</p>
+<div><%#= submit_tag 'Post' %></div>
+<%# end -%>
+
+<div id="menu">
+<% form_tag search_member_path(@member) do -%>
+<%= text_field_tag :query %>
+<%= submit_tag 'Search' %></div>
+<% end -%>
+<%#= link_to_remote "Tiemlines",
+   :url =>  timeline_member_path(@member),
+   :method => :get,
+   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
+   :update => { :success => "data", :failure => "error" }
+%>
+
+<%#= link_to_remote "Show friends",
+   :url => "#", #partialfriends_member_path(@member)
+   :method => :get,
+   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
+   :update => { :success => "data", :failure => "error" }
+%> 
+<%#= link_to_remote "Show followers",
+   :url => "#", #partialfollowers_member_path(@member),
+   :method => :get,
+   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
+   :update => { :success => "data", :failure => "error" }
+%> 
+<%#= link_to_remote "Show mentions",
+   :url => "#", #partialmentions_member_path(@member),
+   :method => :get,
+   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
+   :update => { :success => "data", :failure => "error" }
+%> 
+<%#= link_to_remote "Show direct messages",
+   :url => "#", #partialdms_member_path(@member),
+   :method => :get,
+   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
+   :update => { :success => "data", :failure => "error" }
+%>
+</div>
+
+<div id="error">
+</div>
+<div id="data">
+<%= render :partial => 'members/timelines', :locals => { :messages => @messages } , :layout => false%>
+</div>
+
