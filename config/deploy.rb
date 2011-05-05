@@ -1,6 +1,6 @@
-set :application, "twitter_app"
+set :application, "testapp"
 set :repository,  "git@github.com:bdurgaprasad-nyros/twitter_app.git"
-
+set :user, 'mahesh'
 set :scm,        "git"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :deploy_to,  "/media/disk-1/ror_projects/prasad/#{application}"
