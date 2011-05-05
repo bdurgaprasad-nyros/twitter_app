@@ -30,6 +30,7 @@ Rails::Initializer.run do |config|
 
   #config.gem 'oauth', :version => '0.3.6'
   config.gem 'oauth', :version => '0.4.0'
+  config.gem 'capistrano'
 	
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
@@ -80,9 +81,9 @@ Rails::Initializer.run do |config|
 	# Twitter OAuth settings
 	TWOAUTH_SITE = 'http://twitter.com'
 	# Twitter OAuth callback default
-	TWOAUTH_CALLBACK = 'http://172.20.1.41:3000/members/callback'
+	TWOAUTH_CALLBACK = 'http://172.20.1.33:4000/members/callback'
 	# Twitter OAuth Consumer key
-	TWOAUTH_KEY = 'zZA4q0gRJkzhLGqej9Zi7A'
+	TWOAUTH_KEY = 'b8CSyOhjzZRywEeqzS3rg'
 	# Twitter OAuth Consumer secret
-	TWOAUTH_SECRET ='gsgA3gfUgzRiP6sdi8EvW5rBuNne82NBpn5HbKDniuw'
+	TWOAUTH_SECRET ='KrFh5z1KTlN6bZx18wzoesrQwVYiMUnzLLIOdmbBYWo'
 end
