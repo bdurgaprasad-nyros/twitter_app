@@ -31,6 +31,10 @@ Rails::Initializer.run do |config|
   #config.gem 'oauth', :version => '0.3.6'
   config.gem 'oauth', :version => '0.4.0'
   config.gem 'capistrano'
+  
+  
+  config.gem 'koala'
+  config.gem 'fb_graph'
 	
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.

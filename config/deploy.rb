@@ -8,7 +8,8 @@ set :repository,  "git@github.com:bdurgaprasad-nyros/twitter_app.git"
 set :user, 'mahesh'
 #~ set :scm,        "git"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :deploy_to,  "/media/disk/ror_projects/prasad/#{application}"
+set :deploy_to,  "/media/disk-1/ror_projects/prasad/#{application}"
+set :deploy_via, :checkout 
 set :use_sudo, false
 #~ set :branch, "master"
 set :runner, user
@@ -21,11 +22,14 @@ set :scm_passphrase, "indian"
 
 set :deploy_via, :remote_cache
 set :password, "12345678"
-set :rails_env,       "development"
+set :rails_env, "development"
+
+
 set :db_name, "twitter_oauth_dev"
+set :db_type, "mysql"
 set :port_number, 4000
 set :bundler_cmd, "bundle install --deployment --without=development,test"
-
+set :chmod755, %w(app config db lib public vendor script tmp public/dispatch.cgi public/dispatch.fcgi public/dispatch.rb)
 
 
 
@@ -88,6 +92,19 @@ task :create_database do
     run "mysql --user='root' --password='root' --execute=\"#{create_sql}\""
   end
   end
+  
+  
+  #~ desc "Link up the application. This creates/updates a standard symbolic link 
+#~ from the application location to a sub-folder of your ~/public_html (a.k.a, ~/www)"
+#~ task :link_app do
+  #~ run "rm -rf ~#{deploy_to} "
+  #~ run "ln -s #{current_path}/public ~#{deploy_to}"
+#~ end
+
+  task :start_server, :roles => :app do
+    run "cd #{deploy_to}/current; mongrel_rails start -e production -p #{port_number} -d"
+  end
+  
   
   after 'deploy:update_code', 'deploy:symlink_database'
 
