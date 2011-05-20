@@ -29,7 +29,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
 
   #config.gem 'oauth', :version => '0.3.6'
-  config.gem 'rails', :version => '2.3.8'  
+ 
   config.gem 'oauth', :version => '0.4.0'
   config.gem 'capistrano'
   config.gem 'heroku'  
